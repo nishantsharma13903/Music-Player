@@ -6,7 +6,7 @@ export default function FavouriteCard(Props) {
   const [del_arr,setDelArr] = useState(returnInfo());
 
   const removeSong = ()=>{
-    setDelArr(delSong(Props.song.collectionId));
+    setDelArr(delSong(Props.song.trackId));
   }
 
   useEffect(()=>{

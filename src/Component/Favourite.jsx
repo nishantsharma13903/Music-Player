@@ -36,7 +36,7 @@ export default function Favourite() {
             <i>Favourite Songs</i>
           </h1>
           <div className="fav-cont col-12 d-flex flex-column border-top">
-            {JSON.parse(localStorage.getItem('del')) && JSON.parse(localStorage.getItem('del')).map((item, index) => {
+            {JSON.parse(localStorage.getItem('del')) && JSON.parse(localStorage.getItem('del')).map((item) => {
               return <FavouriteCard song={item} fun={getData} />;
             })}
           </div>

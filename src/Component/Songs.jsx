@@ -8,7 +8,7 @@ export default function Songs(Props) {
         <i>Songs</i>
       </h1>
       <div className="d-flex justify-content-evenly flex-wrap">
-        {Props.allsongs.map((songItem, index) => {
+        {Props.allsongs.map((songItem) => {
           return <Song song={songItem} />;
         })}
       </div>
