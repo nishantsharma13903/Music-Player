@@ -25,7 +25,7 @@ function App() {
         <Route path='/player/:song' element={<Player/>}></Route>
         <Route path='/favourite' element={<Favourite/>}></Route>
         <Route path='/about' element={<About />}></Route>
-        <Route path="*" element={<NotFoundPage />}></Route>
+        // <Route path="*" element={<NotFoundPage />}></Route>
       </Routes>
       
     </>
