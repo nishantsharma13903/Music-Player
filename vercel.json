@@ -1,3 +1,8 @@
 {
-  
+  "rewrites": [
+    {"source": "/music/", "destination": "https://music-player-theta-flame.vercel.app/"},
+    {"source": "/music/:match*", "destination": "https://music-player-theta-flame.vercel.app/:match*"},
+    {"source": "/", "destination": "https://jobportaladminpanel.vercel.app/"},
+    {"source": "/:match*", "destination": "https://jobportaladminpanel.vercel.app/:match*"}
+  ]
 }
