@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path='/music' element={<HomeRedirect />}></Route>
+        <Route exact path='/' element={<HomeRedirect />}></Route>
         <Route path='/music/home' element={<SearchPageComponent />}></Route>
         <Route path='/music/player/:song' element={<Player/>}></Route>
         <Route path='/music/favourite' element={<Favourite/>}></Route>
