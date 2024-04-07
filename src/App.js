@@ -11,7 +11,7 @@ function App() {
   const HomeRedirect = ()=>{
     const navigate = useNavigate();
     useEffect(()=>{
-      navigate('/music/home');
+      navigate('/home');
     },[])
     return null;
   }
@@ -21,10 +21,10 @@ function App() {
     <>
       <Routes>
         <Route exact path='/' element={<HomeRedirect />}></Route>
-        <Route path='/music/home' element={<SearchPageComponent />}></Route>
-        <Route path='/music/player/:song' element={<Player/>}></Route>
-        <Route path='/music/favourite' element={<Favourite/>}></Route>
-        <Route path='/music/about' element={<About />}></Route>
+        <Route path='/home' element={<SearchPageComponent />}></Route>
+        <Route path='player/:song' element={<Player/>}></Route>
+        <Route path='/favourite' element={<Favourite/>}></Route>
+        <Route path='/about' element={<About />}></Route>
         // <Route path="*" element={<NotFoundPage />}></Route>
       </Routes>
       
